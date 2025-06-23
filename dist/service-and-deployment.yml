@@ -28,8 +28,9 @@ metadata:
 spec:
   selector:
     app: mind-task
-  type: LoadBalancer
+  type: NodePort
   ports:
   - protocol: TCP
     port: 80
     targetPort: 80
+    nodeport: 30001
